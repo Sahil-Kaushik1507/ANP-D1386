@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            border: 2px solid ;
+
+            animation: bounce 5s ease-in 1s infinite alternate;
+
+        } */
+
+
+        div{
+            height: 100px;
+            width: 100px;
+            
+            border-radius: 50%;
+            border: 20px solid black ;
+            border-top: 20px solid blue;
+
+            /* animation: bounce 5s ease-in 1s infinite alternate; */
+
+            animation: loader 3s steps(6) 0s infinite;
+
+
+
+        }
+
+
+
+
+        @keyframes bounce {
+            0% ,100%{
+                
+                transform: translateY(100);
+            }
+
+            50%{
+                transform: translateY(200px);
+
+            }
+        }
+
+
+            @keyframes loader {
+
+                0%{
+                    transform: rotate(0deg);
+
+                }
+
+                100%{
+                    transform: rotate(360deg);
+                }
+
+                
+            }
+
+            
+        
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1>bouncing ball And Loader</h1>
+
+
+    <div>
+
+    </div>
+</body>
+</html>
