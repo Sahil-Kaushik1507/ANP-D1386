@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>local storage</h1>
+    <h3>welcome <span> user!</span></h3>
+
+    <label for="name">Name</label>
+    <input type="text" name="name"> 
+    <button>submit</button>
+    <script>
+
+    const btn = document.querySelector('button')
+    const input = document.querySelector('input')
+    const span=document.querySelector('span')
+
+
+    btn.addEventListener('click',()=>{
+
+        let name = input.value;
+
+        sessionStorage.setItem("user", name)
+        sessionStorage.setItem('last user update on', new Date())
+        // location.reload()
+        // localStorage.removeItem('last user update on')
+        
+
+    })
+
+    window.addEventListener('load',()=>{
+        span.innerText= localStorage.getItem("user")
+        // sessionStorage.removeItem('last user update on')
+        // localStorage.clear()
+    })
+
+
+    </script>
+</body>
+</html>

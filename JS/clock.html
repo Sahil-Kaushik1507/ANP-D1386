@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>timmer</h1>
+
+
+    <p>00:00:00</p>
+
+    <button>start</button>
+    <button id="stop">stop</button>
+
+
+
+    <script>
+
+        let p = document.querySelector('p')
+        let sec=0
+        let stop1 = document.querySelector("#stop")
+        let temp=setInterval(()=>{
+            // console.log(Date.now())
+            sec++;
+            p.innerText=sec
+
+        },1000)
+
+
+
+      stop1.addEventListener('click',()=>{
+        clearInterval(temp)
+      })
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

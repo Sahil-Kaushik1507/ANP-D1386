@@ -1,0 +1,102 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="myid">DOM</h1>
+
+    <div class="myclass">
+        <p >Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <span  > span text Lorem, ipsum dolor.</span>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+
+
+    <div class="myclass">
+
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <span style=" display: none">span text </span>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <button id="btn">hello</button>
+    
+
+    <script>
+
+        
+                const h1= document.getElementById("myid")
+                const div= document.getElementsByClassName("myclass")
+                const p= document.getElementsByTagName('p')
+
+                const span = document.querySelector('span')
+                const btn = document.querySelector('#btn')
+                const plist = document.querySelectorAll('p');
+
+
+                // console.log(h1)
+                // console.log(div)
+                // console.log(p)
+                // console.log(span)
+                // console.log(plist)
+
+
+                // h1.addAttrubute('style', "color:red;")
+
+                h1.setAttribute('style', 'color:red');
+
+                h1.className="newclass";
+                h1.id="newid"
+                div[0].style.color= "green";
+
+                // span.textContent="new text"
+                // span.innerHTML="new text"
+                // span.innerText="new text"
+
+                console.log(div[1].textContent)
+                console.log(div[1].innerHTML)
+                console.log(div[1].innerText)
+
+                const h3 = document.createElement('h3')
+                h3.innerText="Heading 3"
+                h3.classList = "newclass";
+                h3.style.color="blue"
+
+
+                div[0].appendChild(h3)
+
+                // console.log(h3)
+
+
+        span.remove();
+
+
+
+
+btn.addEventListener('click',()=>{
+    alert("hello")
+})
+
+    
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

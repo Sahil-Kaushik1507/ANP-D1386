@@ -1,16 +1,19 @@
 
 
-// const promise = new Promise((resolve,reject)=>{
+const promise = new Promise((resolve,reject)=>{
 
-//     var check =false;
+    var check =true;
 
-//     if(check){
-//         resolve("promise resloved")
-//     }else{
-//         reject("some error")
-//     }
+    if(check){
+        resolve("promise resloved")
+    }else{
+        reject("some error")
+    }
 
-// })
+})
+
+
+console.log(promise)
 
 // promise
 //     .then((msg)=>console.log(msg))

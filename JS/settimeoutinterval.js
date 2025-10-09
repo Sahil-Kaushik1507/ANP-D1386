@@ -1,14 +1,14 @@
 
 
 
-// console.log("start")
+console.log("start")
 
-// setTimeout(()=>{
-//     console.log("Timer expired....")
-// },0)
+setTimeout(()=>{
+    console.log("Timer expired....")
+},0)
 
 
-// console.log("End")
+console.log("End")
 
 
 setInterval(()=>{
